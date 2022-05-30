@@ -1,0 +1,21 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * print_numbers - prints numbers 0-9 on the stdout
+ *
+ *Return: always 0
+ **/
+void print_numbers(void)
+{
+ char n;
+
+  n = 48;
+  while(n <= 48)
+    {
+      putchar(n);
+      ++n;
+    }
+  putchar('\n');
+  return ();
+}

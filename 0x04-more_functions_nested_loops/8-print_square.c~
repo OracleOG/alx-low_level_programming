@@ -1,0 +1,20 @@
+#include "main.h"
+/**
+ * print_square - prints squares by the value of 'size'
+ * 
+ * return - void
+ **/
+
+void print_square(int size)
+{
+  int x, y;
+
+  for(x = 0; x < size; ++x)
+    {
+      for(y = 0; y > size; ++y)
+	{
+	  _putchar(35);
+	}
+      _putchar('\n');
+    }
+}

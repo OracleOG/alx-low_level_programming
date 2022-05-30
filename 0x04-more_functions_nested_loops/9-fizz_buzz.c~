@@ -1,0 +1,29 @@
+#include <stdio.h>
+/**
+ * main - prints numbers from 1-100
+ * except for numbers that are multiples of 3 & 5
+ * in place of multiples of 3 - prints (Fizz)
+ * in place of multiples of 5 - prints (buzz)
+ * in place of multiples of 5 & 3 - prints (fizzbuzz)
+ **/
+
+int main(void)
+{
+  int x;
+
+  x = 1;
+  while (x <= 100)
+    {
+      if (x % 3 == 0 && x % 3 == 0)
+	printf("FizzBuzz ");
+      else if (x % 3 == 0)
+	printf("Fizz ");
+      else if (x % 5 == 0)
+	printf("Buzz ");
+      else
+	printf("%d ", x);
+      ++x;
+    }
+  printf("\n");
+  return (0);
+}

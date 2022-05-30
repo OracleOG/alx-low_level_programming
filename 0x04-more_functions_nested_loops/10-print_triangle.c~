@@ -1,0 +1,23 @@
+#include "main.h"
+
+/**
+ * print_triangle - prints hashes(#) triangles
+ * @size - size of the triangle
+ *return - always 0
+ **/
+void print_triangle(int size)
+{
+  int x, y, z;
+for ( x = size ; x > 0 ; --x )
+    {
+      for (y = x; y > 0; --y)
+	{
+	  _putchar(' ');
+	}
+      for (z = x; z < size; ++z)
+	{
+	  _putchar(35);
+	}
+      _putchar('\n');
+    }
+}

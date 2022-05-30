@@ -1,0 +1,26 @@
+#include "main.h"
+
+/**
+ * print_diagonal - prints '\' n times
+ *
+ *return - void
+ **/
+
+void print_diagonal(int n)
+{
+  int x, y;
+
+  x = 0;
+  while(x < n)
+    {
+      y = x;
+      while(y > 0)
+	{
+	  _putchar(96);
+	  --y;
+	}
+      _putchar(92);
+      _putchar('\n');
+      ++x;
+    }
+}

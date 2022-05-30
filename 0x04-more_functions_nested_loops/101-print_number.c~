@@ -1,0 +1,33 @@
+#include "main.h"
+
+/**
+ * print_number - prints an int
+ *@n - is the int to be printed
+ *Return - always 0
+ **/
+
+void print_number(int n)
+{
+  int m;
+  
+  if (n >= 10)
+    {
+      _putchar(n / 10);
+      _putchar(n % 10);
+    }
+  if (n < 0 && n > -10)
+    {
+      m = n * -1
+      _putchar(45);
+      _putchar(m);
+    }
+  else if (n < -9)
+    {
+      m = n * -1
+      _putchar(45);
+      _putchar(m / 10);
+      _putchar(m % 10);
+    }
+  else _putchar(n);
+
+}
