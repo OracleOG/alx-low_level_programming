@@ -2,9 +2,9 @@
 
 /**
  * reverse_array - reverse integers in a array
- * @a - pointer to the array
- * @n - size of the array
- * Return - void
+ * @a: pointer to the array
+ * @n: size of the array
+ * Return: void
  **/
 
 void reverse_array(int *a, int n)

@@ -2,9 +2,9 @@
 
 /**
  * leet - encodes a string into 0,1,3,4,7.
- * @s - input for string
+ * @s: input for string
  *
- * return - the encoded string
+ * Return: the encoded string
  **/
 
 char *leet(char *s)
@@ -16,9 +16,9 @@ char *leet(char *s)
 
 	while (s[count] != '\0')
 	{
-		for(x = 0; x < 5; x++)
+		for (x = 0; x < 5; x++)
 		{
-			if(s[count] == up[x] || s[count] == low[x])
+			if (s[count] == up[x] || s[count] == low[x])
 			{
 				s[count] = cod[x];
 				break;
