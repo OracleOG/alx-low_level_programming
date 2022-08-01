@@ -2,10 +2,11 @@
 #include <stdlib.h>
 
 /**
- * **alloc_grid - allocates two dimensional arrays of int
- * @widht: widht of array
+ * alloc_grid - allocates two dimensional arrays of int
+ * @width: widht of array
  * @height: height of array
- *@Return: Pointer to the array allocated.
+ *
+ * Return: Pointer to the array allocated.
  **/
 
 int **alloc_grid(int width, int height)
