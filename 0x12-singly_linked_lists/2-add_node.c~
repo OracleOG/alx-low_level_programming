@@ -1,0 +1,25 @@
+#include "lists.h"
+/**
+ * add_node - add a node at the begining of a list
+ * @head: head of the list.
+ * @str: element in a node.
+ *Return: address to the node created.
+ **/
+
+list_t *add_node(list_t **head, const char *str)
+{
+	int x = 0;
+	list_t *newnode;
+
+	newnode = (list_t *) malloc(sizeof(list_t));
+	if(newnode == NULL)
+		return (NULL);
+	newnode->str = strdup(str);
+	while (str[x] != '\0')
+		x++;
+	newnode->len = x;
+	newnode->next = *head;
+	*head = newnode;
+
+	return (*head);
+}
